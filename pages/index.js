@@ -20,9 +20,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.title}>Testing .slp Uploads PrimeReact</h1>
+        <h1 className={styles.title}>Testing .slp Uploads</h1>
 
-        <FileUpload name="slpFile" url="/api/upload" accept='.slp' />
+        <FileUpload name="slpFile" url="/api/upload" accept='.slp'
+          emptyTemplate={<p>Drag and drop .slp file here to upload!</p>} />
       </main>
     </>
   )
