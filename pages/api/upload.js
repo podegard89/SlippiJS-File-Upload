@@ -26,8 +26,7 @@ export default async function handler(req, res) {
 
         try {
             const game = new SlippiGame(files.slpFile.filepath);
-            console.log(game.getMetadata());
-            console.log(game.getWinners());
+            console.log(game.getStats().overall);
             res.status(201).send("File upload");
         } catch (e) {
             console.log(e);
